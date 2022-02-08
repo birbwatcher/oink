@@ -1,0 +1,350 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+==============================================
+Content Box
+=============================================
+*/
+body {
+    background-color: black;
+}
+
+
+.content-box {
+    width: 1200px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    background-color: #4b4b4d;
+}
+
+
+/*
+===============================================
+clearfix
+===============================================
+*/
+.content-box::after, .content-box::before {
+    content: "";
+    display: table;
+}
+.content-box::after{
+    clear: both;
+}
+
+.content-box {
+    background-color: #4b4b4d;
+    clear: both;
+
+}
+
+.skill-container::before, .skill-container::after {
+    content: "";
+    display: table;
+}
+
+.skill-container::after {
+    clear: both;
+}
+
+.skill-container {
+    clear: both;
+}
+
+.info::before, .info::after {
+    content: "";
+    display: table;
+}
+
+.info::after {
+    clear: both;
+}
+
+.info {
+    clear: both;
+}
+/* 
+===============================================
+Sidebar
+===============================================
+*/
+
+.sidebar {
+    padding: 30px 50px 0 85px;
+    background-color: #4b4b4d;
+    float: left;
+    box-sizing: border-box;
+    width: 457px;
+    color: white;
+}
+
+.userpic {
+    border-radius: 50%;
+    border: 7px solid white;
+    margin-bottom: 70px
+}
+
+.bar {
+    background-color: #d7d7d7;
+    width: 100%;
+    height: 7px;
+    border-radius: 5px;
+    float: right;
+}
+
+.progressbar-photoshop {
+    width: 50%;
+    height: 7px;
+    background-color: #29a9df; 
+    border-radius: 5px;
+}
+
+.progressbar-illustrator {
+    width: 30%;
+    height: 7px;
+    background-color: #29a9df; 
+    border-radius: 5px;
+}
+
+.underlined-sb {
+    border-bottom: 2px solid #b1adae;
+    padding-bottom: 6px;
+
+}
+
+.underlined-sb::before {
+    content:''; 
+    float: right;
+    width: 45px;
+    height: 4px;
+    background-color:#29a9df;
+    margin-top: 24px;
+}
+
+.level {
+    width: 190px;
+    float: right;
+    margin-top: 5px;
+    margin-bottom: 29px;
+}
+
+.program {
+    width: 130px;
+    float: left;
+}
+
+.program p{
+    margin-bottom: 25px;
+}
+
+.skill-container {
+    margin-top: 25px;
+}
+
+.contact-item img{
+    position: relative;
+}
+
+.contact-item p {
+    position: relative;
+}
+
+
+/*
+=================================================
+Content
+=================================================
+*/
+
+.content {
+    background-color: whitesmoke;
+    padding: 0 50px 0 70px;
+    float: left;
+    box-sizing: border-box;
+    width: 743px;
+}
+
+.content h1 {
+    font-size: 46px;
+}
+
+.cv-block {
+    margin-bottom: 50px;
+}
+
+.cv-subblock {
+    margin-bottom: 70px;
+}
+
+.underlined {
+    border-bottom: 2px solid black;
+    padding-bottom: 14px;
+    display: inline-block;
+    width: 100%;
+
+}
+
+.underlined::after {
+    content:''; 
+    float: right;
+    width: 45px;
+    height: 4px;
+    background-color:#29a9df;
+    position: relative;
+    top: 53px;
+}
+
+.profile-icon::before {
+    position: relative;
+    top: 11px;
+    content: "";
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    background-image: url(../images/profile.png);
+    padding-right: 20px;
+    background-repeat: no-repeat;
+}
+
+.experience-icon::before {
+    position: relative;
+    top: 11px;
+    content: "";
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    background-image: url(../images/experience.png);
+    padding-right: 20px;
+    background-repeat: no-repeat;
+}
+
+.cv-location {
+    width: 66%;
+    float: left;
+    margin-top: 16px;
+    font-style: italic;
+    color: #28ace3;
+}
+
+.cv-years {
+    width: 33%;
+    float: right;
+    margin-top: 16px;
+}
+
+.info {
+    margin-bottom: 35px;
+}
+
+.contact-item img {
+    position: relative;
+    top: 11px;
+    padding-right: 15px;
+}
+
+/*
+=================================================
+Typography
+=================================================
+*/
+
+p {
+    line-height: 16px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    padding-top: 115px;
+    padding-bottom: 20px;
+    font-style: bold;
+}
+
+h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.skills h2 {
+    margin-top: 75px;
+}
+
+.job-position {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 90px
+}
+
+.line {
+    height: 100%;
+    width: 2px;
+    background-color: black;
+}
+
+.cv-subblock h3 {
+    font-style: bold;
+    text-transform: uppercase;
+}
+
+.cv-block h2 {
+ margin-bottom: 35px;   
+}
+
+ul {
+    margin: 16px 0px 16px 0px;
+    padding-left: 40px;
+    list-style-type: disc;
+}
+
+.contacts {
+    padding-top: 30px;
+}
